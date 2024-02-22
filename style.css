@@ -1,0 +1,147 @@
+ :root {
+    --cor-violeta: rgb(132, 14, 201);
+ }
+
+ body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppInsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+ }
+
+ header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .titulo {
+    flex-direction: column;
+    line-height: 9px;
+ }
+
+ a {
+    color: white;
+ }
+
+ a:hover {
+    color: var(--cor-violeta);
+    transition: 0.3s all;
+ }
+
+ .botao {
+    border: 2px solid var(--cor-violeta);
+    padding: 0.6rem;
+    border-radius: 13px;
+ }
+
+ .botao:hover {
+    background-color: var(--cor-violeta);
+    color: white;
+ }
+
+ li {
+    display: inline-block;
+    margin: 1.25rem;
+ }
+
+ h1 {
+    font-weight: 200;
+ }
+
+ main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.12rem;
+ }
+
+ h2 {
+    font-size: 3.5rem;
+    line-height: 10px;
+    font-family: poppinsmedium;
+ }
+
+ span {
+    color: var(--cor-violeta);
+ }
+
+ p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+ }
+
+ img {
+    width: 600px;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+ }
+
+ form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: var(--cor-violeta);
+    color: white;
+    font-weight: bold;
+ }
+
+ form [type="submit"]:hover {
+    cursor: pointer;
+ }
+
+ input {
+    margin-top: 1.25rem;
+    height: 20px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+ }
+
+
+ @media only screen and (max-width:760px) {
+    header {
+       flex-direction: column;
+    }
+
+    main {
+       flex-direction: column;
+       text-align: center;
+    }
+
+    h2 {
+       font-size: 2.3rem;
+    }
+
+    p {
+       max-width: 100%;
+    }
+
+
+    form {
+       margin: 0 auto;
+       width: 100%;
+    }
+
+    input {
+       align-self: center;
+    }
+
+    img {
+       width: 360px;
+       margin-top: 6.25rem;
+    }
+
+    ul {
+       text-align: center;
+    }
+
+ }
